@@ -37,7 +37,7 @@ models:
   dbt_and_snowflake_data_pipeline:
     staging:
       materialized: view
-      snowflake_warehouse: pc_dbt_wh
+      snowflake_warehouse: "pc_dbt_wh"
     marts:
       materialized: table
-      snowflake_warehouse: pc_dbt_wh_large
+      snowflake_warehouse: "pc_dbt_wh_large"

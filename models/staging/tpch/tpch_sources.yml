@@ -1,0 +1,17 @@
+version: 2
+sources:
+  - name: tpch
+    description: source tpch data
+    database: TEST_DB
+    schema: TEST_SCHEMA
+    tables:
+      - name: AIRLINE
+        description: MAIN AIRLINE TABLE
+        
+        columns:
+          - name: PASSENGER_ID
+            description: ID OF PASSENGERS TRAVELLING
+            tests: 
+              - unique
+              - not_null
+
